@@ -1,0 +1,49 @@
+// ==========READY SECTION===================
+.ready-section {
+    background-color: #F67E7E;
+}
+.ready-section__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 76px 0;
+}
+.ready-image {
+    position: absolute;
+    margin-top: 28px;
+    margin-left: -580px;
+}
+.ready-section__lead {
+    font-size: 48px;
+    line-height: 48px;
+    color: #012f34;
+}
+.ready-button {
+    border-radius: 50px;
+    border: 2px solid #012f34;
+    background-color: transparent;
+    color: #012f34;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 6px 32px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.ready-button:hover {
+    background-color: #012f34;
+    color: #fff;
+}
+.ready-button:active {
+    opacity: 0.6;
+}
+@include breakpoint-down (768px) {
+    .ready-section__lead {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .ready-image {
+        margin-top: 45px;
+        margin-left: -284px;
+        z-index: 5;
+    }
+}

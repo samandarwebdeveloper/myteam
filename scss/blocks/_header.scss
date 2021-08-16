@@ -1,0 +1,62 @@
+// ========SITE HEADER===============
+.header {
+    background-color: #014E56;
+}
+.site__header {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.site__logo-link {
+    display: block;
+    color: #fff;
+    transition: all 0.2s;
+}
+.site__logo-link:hover {
+    color: #F67E7E;
+    
+}
+.site__logo-image {
+    display: block;
+}
+.site-navigation {
+    margin-right: auto;
+    margin-left: 80px;
+}
+.header__list {
+    display: flex;
+    @include list-unstyled;
+}
+.header__item {
+
+}
+.header__item ~ .header__item {
+    margin-left: 40px;
+}
+.header__link {
+    text-decoration: none;
+    color: #fff;
+}
+.header__link:hover {
+    color: #F67E7E;
+}
+
+.header__button {
+    border-radius: 50px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 6px 32px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.header__button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.header__button:active {
+    opacity: 0.6;
+}

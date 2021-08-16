@@ -1,0 +1,105 @@
+// ===============USERS SECTION==================
+.users__section {
+    background-color: #004047;
+}
+.users__section-wrapper {
+    padding-top: 140px;
+    padding-bottom: 150px;
+    text-align: center;
+}
+.user-section__lead {
+    font-size: 48px;
+    line-height: 48px;
+    color: #fff;
+    margin-bottom: 90px;
+}
+.user-lead__span {
+    color: #79c8c7;
+
+}
+.users-image {
+    position: absolute;
+    margin-top: -326px;
+    margin-left: -680px;
+}
+.user-section__list {
+    @include list-unstyled;
+    display: flex;
+    flex-wrap: wrap;
+}
+.user-section__item {
+    width: 30%;
+    
+}
+.user-section__item::before {
+    @include img-background;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -35px;
+    z-index: 0;
+}
+.user-section__item  ~ .user-section__item {
+    margin-left: 30px;
+}
+.user-item__text {
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 20;
+}
+.user-item__lead {
+    font-size: 18px;
+    line-height: 28px;
+    color: #79c8c7;
+    margin-bottom: 2px;
+}
+.user-item__job {
+    font-size: 13px;
+    line-height: 18px;
+    color: #fff;
+    margin-bottom: 32px;
+}
+.user-item__image {
+
+}
+.users-image2 {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 474px;
+}
+@include breakpoint-down (768px) {
+    .users__section-wrapper {
+        padding-top: 100px;
+    }
+    .user-section__lead {
+        width: 450px;
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+        margin-bottom: 80px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .user-section__list {
+        width: 100%;
+        .user-section__item {
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .user-section__item  ~ .user-section__item {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 80px;
+        }
+    }
+    .users-image {
+        margin-top: -276px;
+        margin-left: -384px;
+    }
+    .users-image2 {
+        margin-left: 184px;
+    }
+}

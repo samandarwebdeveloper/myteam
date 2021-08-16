@@ -1,0 +1,89 @@
+// ========MANAGE SECTION==================
+.section__manage {
+    background-color: #012F34;
+    
+}
+.manage-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 180px;
+    padding-bottom: 120px;
+    flex-wrap: wrap;
+}
+.left__manage-section {
+    width: 40%;
+}
+.left__manage-section::before {
+    content: url('../../image/line2.png');
+    position: absolute;
+    margin-top: -54px;
+}
+.manege-line {
+    position: absolute;
+    margin-top: -50px;
+}
+.manage__lead {
+    font-size: 48px;
+    line-height: 48px;
+    color: #fff;
+}
+.right__manege-section {
+    width: 45%;
+}
+.manage__list {
+    @include list-unstyled;
+    
+}
+.manage__item {
+    margin-bottom: 30px;
+    display: flex;
+}
+.manege__item-img {
+    margin-right: 25px;
+}
+.manage__item-lead {
+    margin-bottom: 16px;
+    color: #F67E7E;
+    font-size: 18px;
+}
+.manage__item-text {
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+}
+.manage-img {
+    position: absolute;
+    display: block;
+    margin-top: -125px;
+    margin-left: 518px;
+}
+@include breakpoint-down (768px) {
+    .manage-section {
+        padding-top: 136px;
+        align-items: center;
+        justify-content: center;
+    }
+    .left__manage-section {
+        width: 60%;
+        margin-bottom: 64px;
+        transform: translateX(-70px);
+        .manage__lead {
+            font-size: 32px;
+            line-height: 32px;
+        }
+    }
+    .right__manege-section {
+        width: 80%;
+
+        
+        .manage__list {
+            width: 80%;
+        }
+    }
+    .manage-img {
+        margin-top: -610px;
+        margin-left: 574px;
+    }
+    
+}
