@@ -103,3 +103,34 @@
         margin-left: 184px;
     }
 }
+@include breakpoint-down (425px) {
+    .users__section-wrapper {
+        padding-top: 140px;
+    }
+    .user-section__lead {
+        width: 90%;
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .users-image {
+        margin-top: -348px;
+        margin-left: -213px;
+    }
+    .users-image2 {
+        margin-left: 10px;
+    }
+}
+@include breakpoint-down (425px) {
+    .users-image2 {
+        margin-left: -14px;
+    }
+}
+@include breakpoint-down (320px) {
+    .users-image {
+        margin-top: -380px;
+        margin-left: -213px;
+    }
+    .users-image2 {
+        margin-left: -40px;
+    }
+}

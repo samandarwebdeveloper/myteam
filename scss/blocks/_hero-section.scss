@@ -87,3 +87,47 @@
 
     }
 }
+@include breakpoint-down (425px) {
+    .hero__section-wrapper {
+        padding-top: 80px
+    }
+    .left__hero-section {
+        width: 100%;
+        margin-bottom: 18px;
+    }
+    .hero-lead {
+        width: 200px;
+        font-size: 40px;
+        line-height: 40px;
+        margin: auto;
+        
+    }
+    .right__hero-section {
+        width: 100%;
+        
+       
+    }
+    .hero-text {
+        width: 300px;
+        margin: auto;
+        font-size: 15px;
+        line-height: 28px;
+    }
+    .right__hero-section::after {
+        margin-left: 20px;
+
+    }
+}
+@include breakpoint-down (375px) {
+    .right__hero-section::after {
+        margin-left: -10px;
+
+    }
+}
+@include breakpoint-down (320px) {
+    .right__hero-section::after {
+        
+        margin-left: -58px;
+
+    }
+}

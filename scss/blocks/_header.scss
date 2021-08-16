@@ -60,3 +60,22 @@
 .header__button:active {
     opacity: 0.6;
 }
+.hamberger {
+    display: none;
+}
+@include breakpoint-down (576px) {
+    .site__header {
+        justify-content: space-between;
+    }
+    .site-navigation {
+        display: none;
+    }
+    .header__button {
+        display: none;
+    }
+    .hamberger {
+        display: block;
+        border:  none;
+        background-color: transparent;
+    }
+}

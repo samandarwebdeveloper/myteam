@@ -47,3 +47,20 @@
         z-index: 5;
     }
 }
+@include breakpoint-down (425px) {
+    .ready-section__wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .ready-section__lead {
+        text-align: center;
+        width: 300px;
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+    .ready-image {
+        margin-top: 85px;
+        margin-left: -113px;
+    }
+}
