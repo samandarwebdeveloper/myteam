@@ -1,0 +1,129 @@
+// =============ABOUT SECTION=======================
+.about__section {
+    background-color: #014E56;
+    background-image: url('../../image/about-img.png');
+    background-position: calc(50% + 685px) bottom;
+    background-repeat: no-repeat;
+}
+.about__section-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    
+}
+.left__about-section {
+    width: 30%;
+}
+.about-lead {
+   
+    font-size: 64px;
+    line-height: 100px;
+    color: #FFFFFF;
+}
+.right__about-section {
+
+}
+.right__about-section::before {
+    content: "";
+    position: absolute;
+    margin-top: -40px;
+    width: 50px;
+    height: 4px;
+    background-color: #F67E7E;
+}
+.about-text {
+    width: 730px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+@include breakpoint-down (768px) {
+    .about__section {
+       
+        background-position: calc(50% + 68%) bottom;
+        
+    }
+    .about__section-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        text-align: center;
+        
+    }
+    .left__about-section {
+        width: 100%;
+        text-align: center;
+    }
+    .about-lead {
+        
+        font-size: 64px;
+        line-height: 56px;
+        margin-bottom: 24px;
+    }
+    .right__about-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-text {
+        width: 65%;
+        font-size: 15px;
+        line-height: 28px;
+        color: #FFFFFF;
+    }
+    .right__about-section::before {
+        display: none;
+    }
+}
+@include breakpoint-down (425px) {
+    .about__section-wrapper {
+        padding-top: 80px;
+        padding-bottom: 160px;
+        
+    }
+    .about__section {
+       
+        background-position: calc(50% + 100%) calc(50% + 92%);
+        
+    }
+    .left__about-section {
+        width: 100%;
+        text-align: center;
+    }
+    .about-lead {
+        
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 16px;
+    }
+    .right__about-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-text {
+        width: 100%;
+        font-size: 15px;
+        line-height: 28px;
+        color: #FFFFFF;
+    }
+}
+@include breakpoint-down (375px) {
+    .about__section {
+       
+        background-position: calc(50% + 106%) calc(50% + 92%);
+        
+    }
+}
+@include breakpoint-down (320px) {
+    .about__section {
+       
+        background-position: calc(50% + 134%) calc(50% + 90%);
+        
+    }
+}
