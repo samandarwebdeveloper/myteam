@@ -1239,6 +1239,14 @@ textarea:focus {
   cursor: pointer;
 }
 
+.icons-link {
+  color: #fff;
+}
+
+.icons-link:hover {
+  color: #F67E7E;
+}
+
 .directors__item:hover .directors-box {
   display: none;
 }
